@@ -113,3 +113,26 @@ class TestBoggleSolver(unittest.TestCase):
         dictionary = ["AAA"]
         game = Boggle(grid, dictionary)
         self.assertEqual(game.getSolution(), ["AAA"])
+
+    """
+    test qu
+    """
+
+    def test_qu_tile(self):
+        grid = [["Qu", "A"],
+                ["R", "T"]]
+        dictionary = ["QUART"]
+        game = Boggle(grid, dictionary)
+        self.assertEqual(game.getSolution(), ["QUART"])
+
+    """
+    test st tiles
+    """
+
+    def test_st_tile(self):
+        grid = [["St", "O"],
+                ["N", "E"]]
+        dictionary = ["STONE"]
+        game = Boggle(grid, dictionary)
+        self.assertEqual(game.getSolution(), ["STONE"])
+
